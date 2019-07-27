@@ -9,10 +9,12 @@ import com.example.jogodaveia.game.models.Player
 import com.example.jogodaveia.game.utils.StringUtility.stringFromNumbers
 
 class GameViewModel : ViewModel() {
+
     lateinit var cells: ObservableArrayMap<String, String>
     private lateinit var game: Game
     val winner: LiveData<Player>
         get() = game.winner
+
     fun init(player1: String, player2: String) {
         game = Game(player1, player2)
         cells = ObservableArrayMap()

@@ -10,6 +10,7 @@ import androidx.fragment.app.DialogFragment
 import com.example.jogodaveia.game.R
 
 class GameEndDialog : DialogFragment() {
+
     private var rootView: View? = null
     private var activity: GameActivity? = null
     private var winnerName: String? = null
